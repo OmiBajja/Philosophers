@@ -5,7 +5,7 @@ CC = cc
 VPATH = $(SRCDIR)
 FLAGS = -Wall -Wextra -Werror -g3
 NAME = philo
-SRCS = philosophers.c
+SRCS = main.c philo_utils.c init.c routine.c
 OBJ = $(SRCS:.c=.o)
 OBJ := $(patsubst $(SRCDIR)/%, $(OBJDIR)/%, $(OBJ))
 INCLUDE_PATH = -I./include
